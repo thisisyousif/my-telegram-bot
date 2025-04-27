@@ -12,8 +12,8 @@ exchange = ccxt.coinex({
 })
 
 # 2. قائمة العملات المتابعة
-symbols = ['TAI/USDT', 'ETHW/USDT', 'DARK/USDT','ACS/USDT','COOK/USDT',
-           'JELLYJELLY/USDT','WING/USDT','LOOM/USDT','JST/USDT','HOUSE/USDT','SZN/USDT','FLM/USDT']
+symbols = ['TAI/USDT', 'LOOM/USDT', 'DARK/USDT','JST/USDT','WAL/USDT',
+           'JELLYJELLY/USDT','WING/USDT','VINE/USDT','ALCH/USDT','HOUSE/USDT','SZN/USDT','FLM/USDT']
 
 # 3. حساب الـ EMA (للحجم أو السعر)
 def calculate_ema(data, window=10):
