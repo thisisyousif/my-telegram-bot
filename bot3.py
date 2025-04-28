@@ -12,9 +12,9 @@ exchange = ccxt.coinex({
 })
 
 # 2. قائمة العملات المتابعة
-symbols = ['TAI/USDT', 'LOOM/USDT', 'DARK/USDT','JST/USDT','WAL/USDT',
-           'JELLYJELLY/USDT','WING/USDT','VINE/USDT','ALCH/USDT','HOUSE/USDT','SZN/USDT','FLM/USDT']
-
+symbols = ['VITE/USDT', 'KLY/USDT', 'WAL/USDT','HAT/USDT','FARTCOIN/USDT',
+           'HOLO/USDT','XR/USDT','TROLLSOL/USDT','BMT/USDT','ARC/USDT','ARMY/USDT','XMR/USDT']
+last_update="28042025"
 # 3. حساب الـ EMA (للحجم أو السعر)
 def calculate_ema(data, window=10):
     series = pd.Series(data)
@@ -64,7 +64,7 @@ async def send_auto_message(context: ContextTypes.DEFAULT_TYPE):
                 eligible_coins.append(symbol)
                 
         message=' '.join(eligible_coins) if eligible_coins else "no chances now..."
-        message=message+"..from bot v3"
+        message=message+"..from RailWay "+last_update
         await context.bot.send_message(
             chat_id=CHAT_ID1,
             text=message
